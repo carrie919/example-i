@@ -20,64 +20,69 @@ const Footer = () => {
     const dummy = () => alert('footer icons clecked');
 
     return (
-        <Box
-            height='200px'
-            width='1440px'
-            bgcolor='#E5E5E5'
-            position='absolute'
-            left='0%'
-            right='0%'
-            top='91.2%'
-            bottom='0%'
-            zIndex='3'
-        >
-            <Box
-                height='100px'
-                width='1440px'
-                position='absolute'
-                top='0%'
-                left='0%'
-                right='0%'
-                bgcolor='#FAFAFA'
-            >
-                <Link to='/' className={classes.logoContainer}></Link>
-                <FooterNavLink myClassName={classes.aboutUsPosition} label='About us' width='76px'/>
-                <FooterNavLink myClassName={classes.productPosition} label='Product' width='66px' />
-                <FooterNavLink myClassName={classes.contactPosition} label='Contact' width='65px' />
+        <Box className={classes.footer}>
+            <Box className={classes.footerContentOne}>
+                <Box className={classes.logoContainer}>
+                    <Link to='/' className={classes.logo}></Link>
+                </Box>
+                <Box className={classes.contentOneLinks}>
+                    <FooterNavLink
+                        myClassName={classes.aboutUsPosition}
+                        label='About us'
+                        width='74px'
+                    />
+                    <FooterNavLink
+                        myClassName={classes.productPosition}
+                        label='Product'
+                        width='66px'
+                    />
+                    <FooterNavLink
+                        myClassName={classes.contactPosition}
+                        label='Contact'
+                        width='65px'
+                    />
+                </Box>
                 <SignOutButton
+                    style={
+                        {
+                            position: 'absolute',
+                            right: '0px',
+                            top: '46px'
+                        }
+                    }
                     startIcon={<SignOutIcon className={classes.signOutIcon} />}
                     onClick={() => alert('sign out is clicked')}
                 >
                     Sign Out
                 </SignOutButton>
+                <Box className={classes.contentDivider}/>
             </Box>
-            <Box
-                component='span'
-                height='2px'
-                width='940px'
-                position='absolute'
-                left='250px'
-                top='99px'
-                bgcolor='#EFF2F4'
-                borderRadius='5px'
-            />
-            <Box
-                height='100px'
-                width='1440px'
-                position='absolute'
-                bottom='0%'
-                left='0%'
-                right='0%'
-                bgcolor='#FAFAFA'
-            >
+            <Box className={classes.footerContentTwo}>
                 <Typography variant='subtitle2' className={classes.typo}>
                     © 2020 Onesaz. All rights reserved.
                 </Typography>
-                <Icon myClassName={classes.twitterPosition} size='small' icon='twitter' handleClick={dummy}/>
-                <Icon myClassName={classes.fbPosition} size='small' icon='fb'  handleClick={dummy} />
-                <Icon myClassName={classes.youtubePosition} size='small' icon='youtube' handleClick={dummy}/>
-                <Icon myClassName={classes.upArrowPosition} icon='upArrow'  handleClick={dummy} />
+                <Box className={classes.contentTwoIcons}>
+                    <Icon
+                        myClassName={classes.twitterPosition}
+                        size='small'
+                        icon='twitter'
+                        handleClick={dummy}
+                    />
+                    <Icon
+                        myClassName={classes.fbPosition}
+                        size='small'
+                        icon='fb'
+                        handleClick={dummy}
+                    />
+                    <Icon
+                        myClassName={classes.youtubePosition}
+                        size='small'
+                        icon='youtube'
+                        handleClick={dummy}
+                    />
+                </Box>
             </Box>
+            <Icon myClassName={classes.upArrowPosition} icon='upArrow'  handleClick={dummy} />
         </Box >
     )
 }

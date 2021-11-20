@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
-const iconStyles = makeStyles({
+const iconStyles = makeStyles((theme) => ({
     userIcon: {
         height: '30px',
         width: '30px',
@@ -8,7 +8,13 @@ const iconStyles = makeStyles({
         top: '15px',
         bottom: '15px',
         left: '15px',
-        right: '15px'
+        right: '15px',
+        [theme.breakpoints.down('xs')]: {
+            top: '5px',
+            bottom: '5px',
+            left: '5px',
+            right: '5px'
+        }
     },
     twitter: {
         height: '17.94px',
@@ -44,8 +50,20 @@ const iconStyles = makeStyles({
         top: '15px',
         bottom: '15px',
         left: '15px',
-        right: '15px'
+        right: '15px',
+        [theme.breakpoints.down('xs')]: {
+            top: '5px',
+            bottom: '5px',
+            left: '5px',
+            right: '5px'
+        }
+    },
+    logoShrink: {
+        [theme.breakpoints.down('xs')]: {
+            height: '40px',
+            width: '40px'
+        }
     }
-})
+}))
 
 export default iconStyles

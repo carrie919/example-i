@@ -22,46 +22,32 @@ const Header = () => {
 
 
     return (
-        <Box
-            height='100px'
-            width='1440px'
-            bgcolor='#E5E5E5'
-            position='absolute'
-            left='0%'
-            right='0%'
-            top='0%'
-            bottom='95.6%'
-            zIndex='99'
-        >
-            <Box
-                height='100px'
-                width='1440px'
-                position='absolute'
-                left='0%'
-                right='0%'
-                bottom='0%'
-                bgcolor='#FAFAFA'
-            >
-                <Link to='/' className={classes.logoContainer}></Link>
-                <HeaderNavLink
-                    myClassName={classes.examsPosition}
-                    label='Exams'
-                    rootPathName={rootPathName}
-                    toPath='/exams'
-                    width='54px'
-                />
-                <HeaderNavLink
-                    myClassName={classes.conceptsPosition}
-                    label='Concepts'
-                    rootPathName={rootPathName}
-                    toPath='/concepts'
-                    width='77px'
-                />
-                <Icon
-                    myClassName={classes.userIconPosition}
-                    icon='userIcon'
-                    handleClick={() => alert('user Icon clicked')}
-                />
+        <Box className={classes.header}>
+            <Box className={classes.headerContent}>
+                <Box className={classes.logoContainer}>
+                    <Link to='/' className={classes.logo}></Link>
+                </Box>
+                <Box className={classes.headerNavContainer}>
+                    <HeaderNavLink
+                        myClassName={classes.examsPosition}
+                        label='Exams'
+                        rootPathName={rootPathName}
+                        toPath='/exams'
+                        width='54px'
+                    />
+                    <HeaderNavLink
+                        myClassName={classes.conceptsPosition}
+                        label='Concepts'
+                        rootPathName={rootPathName}
+                        toPath='/concepts'
+                        width='77px'
+                    />
+                    <Icon
+                        myClassName={classes.userIconPosition}
+                        icon='userIcon'
+                        handleClick={() => alert('user Icon clicked')}
+                    />
+                </Box>
             </Box>
         </Box >
     )

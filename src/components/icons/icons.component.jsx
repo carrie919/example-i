@@ -17,21 +17,22 @@ const iconMap = {
     upArrow: <UpArrow />
 }
 
-const Icon = ({ size, icon, myClassName, handleClick }) => {
-    const measure = (size === 'small') ? '40px' : '60px';
+const Icon = ({size, icon, myClassName, handleClick }) => {
+    const measure = size === 'small' ? '40px' : '60px';
     const classes = iconStyles();
     
     return (
         <Box
             height={measure}
             width={measure}
-            position='absolute'
-            className={myClassName}
+            position='relative'
+            className={`${myClassName} ${classes.logoShrink}`}
             onClick={handleClick}
         >
             <Box
                 height={measure}
                 width={measure}
+                className={classes.logoShrink}
                 position='absolute'
                 left='0%'
                 right='0%'

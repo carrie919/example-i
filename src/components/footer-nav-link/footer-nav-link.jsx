@@ -12,10 +12,7 @@ const useStyles = makeStyles({
         fontSize: '16px',
         fontWeight: '500',
         lineHeight: '20px',
-        position: 'absolute',
-        left: '1px',
-        top: '0px',
-        right: '0px'
+        paddingleft: '1px'
     }
 });
 

@@ -28,7 +28,7 @@ const ExamCard = ({head, type, paper, to, from }) => {
     return (
         <Card className={classes.root}>
             <CardContent>
-                <ThemeProvider theme={theme}>
+                {/* <ThemeProvider theme={theme}> */}
                     <Typography
                         className={classes.cardHead}
                         variant='h1'>{head}
@@ -53,7 +53,7 @@ const ExamCard = ({head, type, paper, to, from }) => {
                         Available from:<Typography variant='body2'>{from}</Typography><br />
                         Ends on:<Typography variant='body2'>{to}</Typography>
                     </Typography>
-                </ThemeProvider>
+                {/* </ThemeProvider> */}
             </CardContent>
             <CardActions>
                 <StartButton

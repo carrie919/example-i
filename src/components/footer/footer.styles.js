@@ -2,30 +2,125 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import logo from '../../assets/onesaz-logo.png';
 
-const footerStyles = makeStyles({
-    logoContainer: {
+const footerStyles = makeStyles((theme) => ({
+    footer: {
+        Height: '200px',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
         position: 'absolute',
-        left: '17.36%',
-        right: '72.22%',
-        top: '31%',
-        bottom: '29%',
-        background: `url(${logo})`
+        left: '0%',
+        right: '0%',
+        top: '91.2%',
+        bottom: '0%',
+        zIndex: '3',
+        backgroundColor: '#FAFAFA',
+        [theme.breakpoints.down('xs')]: {
+            height: '250px'
+        }
+    },
+    footerContentOne: {
+        minHeight: '100px',
+        width: '940px',
+        backgroundColor: '#FAFAFA',
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'space-between',
+        margin: 'auto 10px',
+        [theme.breakpoints.down('md')]: {
+            width: '93%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '93%',
+            flexDirection: 'column',
+            height: '150px'
+        }
+    },
+    contentDivider: {
+        component: 'span',
+        height: '2px',
+        width: '940px',
+        position: 'absolute',
+        left: '0px',
+        right: '0px',
+        bottom: '-1px',
+        backgroundColor: '#EFF2F4',
+        borderRadius: '5px',
+        [theme.breakpoints.down('md')]: {
+            width: '100%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            display: 'none'
+        }
+    },
+    footerContentTwo: {
+        height: '100px',
+        width: '940px',
+        backgroundColor: '#FAFAFA',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        margin: 'auto 10px',
+        [theme.breakpoints.down('md')]: {
+            width: '93%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            flexDirection: 'column',
+            height: '100px'
+        }
+    },
+    contentOneLinks: {
+        height: '100%',
+        width: '265px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        paddingTop: '46px',
+        paddingBottom: '34px',
+        marginRight: '160px',
+        [theme.breakpoints.down('md')]: {
+            marginRight: '130px'
+        },
+        [theme.breakpoints.down('xs')]: {
+            alignItems: 'center',
+            justifyContent: 'space-evenly',
+            height: '50px',
+            width: '100%',
+            margin: '0',
+            padding: '0'
+        }
+    },
+    logoContainer: {
+        width: '150px',
+        height: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        [theme.breakpoints.down('xs')]: {
+            width: '100px',
+            height: '100px'
+        }
+    },
+    logo: {
+        display: 'block',
+        height: '40px',
+        width: '150px',
+        background: `center / contain no-repeat url(${logo})`,
+        [theme.breakpoints.down('xs')]: {
+            width: '100px',
+        }
     },
     signOutIcon: {
         height: '24px',
         width: '24px',
         position: 'absolute',
-        left: '0%',
         right: '76%',
         top: '0%',
         bottom: '0%',
+        left: '0%'
     },
     typo: {
         height: '25px',
-        position: 'absolute',
-        left: '17.36%',
-        top: '37%',
-        bottom: '38%',
         fontFamily: 'Montserrat',
         fontStyle: 'normal',
         fontWeight: '500',
@@ -33,53 +128,39 @@ const footerStyles = makeStyles({
         lineHeight: '25px',
         color: '#31456AB2'
     },
-    twitterPosition: {
-        top: '30px',
-        bottom: '30px',
-        left: '989px'
-    },
-    fbPosition: {
-        top: '30px',
-        bottom: '30px',
-        left: '1069px'
-    },
-    youtubePosition: {
-        top: '30px',
-        bottom: '30px',
-        left: '1149px'
+    contentTwoIcons: {
+        height: '100%',
+        width: '200px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
     },
     upArrowPosition: {
-        top: '20px',
+        position: 'absolute',
         bottom: '20px',
-        right: '20px'
+        right: '20px',
+        [theme.breakpoints.down('md')]: {
+            right: '450px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            right: '250px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            display: 'none'
+        }
     },
     aboutUsPosition: {
         height: '20px',
-        width: '76px',
-        position: 'absolute',
-        top: '46%',
-        bottom: '43%',
-        left: '52.99%',
-        right: '41.88%'
+        width: '76px'
     },
     productPosition: {
         height: '20px',
-        width: '66px',
-        position: 'absolute',
-        top: '46%',
-        bottom: '43%',
-        left: '60.28%',
-        right: '35.14%'
+        width: '66px'
     },
     contactPosition: {
         height: '20px',
-        width: '65px',
-        position: 'absolute',
-        top: '46%',
-        bottom: '43%',
-        left: '66.94%',
-        right: '28.54%'
+        width: '65px'
     }
-})
+}));
 
 export default footerStyles;

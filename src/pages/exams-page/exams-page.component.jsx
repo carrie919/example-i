@@ -20,17 +20,17 @@ const ExamsPage = () => {
     const classes = examPageStyles();
 
     const myTabs = [
-        {tabName: 'jeeMains', tabLabel: 'Jee Mains'},
-        {tabName: 'jeeAdvance', tabLabel: 'Jee Advance'},
-        {tabName: 'custom', tabLabel: 'Custom'},
-        {tabName: 'neet', tabLabel: 'Neet'},
+        { tabName: 'jeeMains', tabLabel: 'Jee Mains' },
+        { tabName: 'jeeAdvance', tabLabel: 'Jee Advance' },
+        { tabName: 'custom', tabLabel: 'Custom' },
+        { tabName: 'neet', tabLabel: 'Neet' },
     ]
 
     const subTabs = [
-        {tabName: 'allExams', tabLabel: 'All Exams', },
-        {tabName: 'previousExams', tabLabel: 'Previous Exams'},
-        {tabName: 'currentExams', tabLabel: 'Current Exams'},
-        {tabName: 'upcomingExams', tabLabel: 'Upcoming Exams'},
+        { tabName: 'allExams', tabLabel: 'All Exams', },
+        { tabName: 'previousExams', tabLabel: 'Previous Exams' },
+        { tabName: 'currentExams', tabLabel: 'Current Exams' },
+        { tabName: 'upcomingExams', tabLabel: 'Upcoming Exams' },
     ]
 
     const listExamCards = (exam, index) => {
@@ -40,7 +40,7 @@ const ExamsPage = () => {
             width='300px'
             position='absolute'
             left={(index % 3 === 0) ? '250px' : (index % 3 === 1 ? '569px' : '889px')}
-            top={`${601 + ((index - (index % 3))/ 3) * 383}px`}
+            top={`${601 + ((index - (index % 3)) / 3) * 383}px`}
         >
             <ExamCard
                 head={exam.topic}
@@ -52,9 +52,9 @@ const ExamsPage = () => {
         </Box>
     }
 
-    const examCount = (subTabName) => subTabName === 'allExams' ?  List[activeTab].length : 
+    const examCount = (subTabName) => subTabName === 'allExams' ? List[activeTab].length :
         List[activeTab].reduce(
-            ((initial, exam) => subTabName.includes(exam.status) ? initial + 1 : initial),0)
+            ((initial, exam) => subTabName.includes(exam.status) ? initial + 1 : initial), 0)
 
     return (
         <Box
@@ -68,30 +68,46 @@ const ExamsPage = () => {
             left='0%'
             zIndex='1'
         >
-            <Typography variant='h1' className={classes.introHead}>
-                What do You Want to
-                <Typography variant='h1' component='span' className={classes.partOfHead}>Learn</Typography>
-                Today?
-            </Typography>
-            <Typography variant='body1' className={classes.introDes}>
-                Select course type to continue
-            </Typography>
+            <Box
+                height='201.32px'
+                width='100%'
+            >
+            </Box>
+            <Box
+                height='118.68px'
+                width='100%'
+                display='flex'
+                flexDirection='column'
+                justifyContent='space-between'
+                alignItems='center'
+            >
+                <Typography variant='h1' className={classes.introHead}>
+                    What do You Want to
+                    <Typography variant='h1' component='span' className={classes.partOfHead}>Learn</Typography>
+                    Today?
+                </Typography>
+                <Typography variant='body1' className={classes.introDes}>
+                    Select course type to continue
+                </Typography>
+            </Box>
 
+            <Box>
+                {
+                    myTabs.map((tab, index) => (
+                        <NavTabButtom
+                            key={index}
+                            myClassName={classes[tab.tabName]}
+                            label={tab.tabLabel}
+                            isActive={
+                                activeTab === tab.tabName ? true : false
+                            }
+                            handleClick={() => setActiveTab(tab.tabName)}
+                        />
+                    ))
+                }
+            </Box>
             {
-                myTabs.map((tab, index) =>( 
-                    <NavTabButtom
-                        key={index}
-                        myClassName={classes[tab.tabName]}
-                        label={tab.tabLabel}
-                        isActive={
-                            activeTab === tab.tabName ? true : false
-                        }
-                        handleClick={() => setActiveTab(tab.tabName)}
-                    />
-                ))
-            }
-            {
-                subTabs.map((tab, index) =>( 
+                subTabs.map((tab, index) => (
                     <SubNavTabButton
                         key={index}
                         myClassName={classes[tab.tabName]}
