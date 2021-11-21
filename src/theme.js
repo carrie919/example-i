@@ -15,10 +15,7 @@ const theme = createTheme({
             sm: 620,
             md: 960,
             lg: 1280,
-            xl: 1920,
-            custom1: 700,
-            custom2: 390,
-            custom3: 320,
+            xl: 1920
         },
     },
 });

@@ -4,7 +4,7 @@ import { Box, Typography } from '@material-ui/core'
 
 const HomePage = () => (
     <Box
-        height='400px'
+        height='1000px'
         width='100%'
         paddingTop='300px'
     >

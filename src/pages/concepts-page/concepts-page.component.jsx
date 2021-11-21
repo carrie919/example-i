@@ -6,7 +6,7 @@ import { Box, Typography } from '@material-ui/core'
 const ConceptsPage = () => {
     return(
         <Box
-            height='400px'
+            height='1000px'
             width='100%'
             paddingTop='300px'
         >
