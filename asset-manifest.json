@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/example-i/static/css/main.b0b21a40.chunk.css",
-    "main.js": "/example-i/static/js/main.c8aebc1a.chunk.js",
-    "main.js.map": "/example-i/static/js/main.c8aebc1a.chunk.js.map",
-    "runtime-main.js": "/example-i/static/js/runtime-main.b266b79a.js",
-    "runtime-main.js.map": "/example-i/static/js/runtime-main.b266b79a.js.map",
-    "static/js/2.cb241193.chunk.js": "/example-i/static/js/2.cb241193.chunk.js",
-    "static/js/2.cb241193.chunk.js.map": "/example-i/static/js/2.cb241193.chunk.js.map",
-    "static/js/3.eef7e062.chunk.js": "/example-i/static/js/3.eef7e062.chunk.js",
-    "static/js/3.eef7e062.chunk.js.map": "/example-i/static/js/3.eef7e062.chunk.js.map",
+    "main.css": "/example-i/static/css/main.7678a96b.chunk.css",
+    "main.js": "/example-i/static/js/main.5f70b1a4.chunk.js",
+    "main.js.map": "/example-i/static/js/main.5f70b1a4.chunk.js.map",
+    "runtime-main.js": "/example-i/static/js/runtime-main.eb18f372.js",
+    "runtime-main.js.map": "/example-i/static/js/runtime-main.eb18f372.js.map",
+    "static/js/2.03995819.chunk.js": "/example-i/static/js/2.03995819.chunk.js",
+    "static/js/2.03995819.chunk.js.map": "/example-i/static/js/2.03995819.chunk.js.map",
+    "static/js/3.f3773c43.chunk.js": "/example-i/static/js/3.f3773c43.chunk.js",
+    "static/js/3.f3773c43.chunk.js.map": "/example-i/static/js/3.f3773c43.chunk.js.map",
     "index.html": "/example-i/index.html",
-    "static/css/main.b0b21a40.chunk.css.map": "/example-i/static/css/main.b0b21a40.chunk.css.map",
-    "static/js/2.cb241193.chunk.js.LICENSE.txt": "/example-i/static/js/2.cb241193.chunk.js.LICENSE.txt",
-    "static/media/arrow-up.f969d141.svg": "/example-i/static/media/arrow-up.f969d141.svg",
-    "static/media/fb-icon.75241d97.svg": "/example-i/static/media/fb-icon.75241d97.svg",
-    "static/media/sign-out-icon.8ffa471b.svg": "/example-i/static/media/sign-out-icon.8ffa471b.svg",
-    "static/media/twitter-icon.c7646279.svg": "/example-i/static/media/twitter-icon.c7646279.svg",
-    "static/media/user-icon.d3349b6d.svg": "/example-i/static/media/user-icon.d3349b6d.svg",
-    "static/media/youtube-icon.b5ebb43b.svg": "/example-i/static/media/youtube-icon.b5ebb43b.svg"
+    "static/css/main.7678a96b.chunk.css.map": "/example-i/static/css/main.7678a96b.chunk.css.map",
+    "static/js/2.03995819.chunk.js.LICENSE.txt": "/example-i/static/js/2.03995819.chunk.js.LICENSE.txt",
+    "static/media/arrow-up.b3c779aa.svg": "/example-i/static/media/arrow-up.b3c779aa.svg",
+    "static/media/fb-icon.71987678.svg": "/example-i/static/media/fb-icon.71987678.svg",
+    "static/media/sign-out-icon.bd28bede.svg": "/example-i/static/media/sign-out-icon.bd28bede.svg",
+    "static/media/twitter-icon.85260aee.svg": "/example-i/static/media/twitter-icon.85260aee.svg",
+    "static/media/user-icon.f5b8a12e.svg": "/example-i/static/media/user-icon.f5b8a12e.svg",
+    "static/media/youtube-icon.9ee60333.svg": "/example-i/static/media/youtube-icon.9ee60333.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b266b79a.js",
-    "static/js/2.cb241193.chunk.js",
-    "static/css/main.b0b21a40.chunk.css",
-    "static/js/main.c8aebc1a.chunk.js"
+    "static/js/runtime-main.eb18f372.js",
+    "static/js/2.03995819.chunk.js",
+    "static/css/main.7678a96b.chunk.css",
+    "static/js/main.5f70b1a4.chunk.js"
   ]
 }
