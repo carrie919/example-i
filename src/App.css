@@ -1,9 +1,7 @@
 .App {
   text-align: center;
   position: relative;
-  height: 2272px;
-  /* width: 1440px; */
-  background-color: white;
+  background-color: #ECF0F3CC;
 }
 
 * {

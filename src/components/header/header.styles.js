@@ -6,24 +6,18 @@ const headerStyles = makeStyles((theme) => ({
     header: {
         height: '100px',
         width: '100%',
-        bgcolor: '#FAFAFA',
-        position: 'absolute',
-        left: '0%',
-        right: '0%',
-        top: '0%',
-        bottom: '95.6%',
-        zIndex: '99',
+        backgroundColor: '#FAFAFA',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         [theme.breakpoints.down('xs')]: {
-            height: '60px',
+            height: '80px',
         }
     },
     headerContent: {
         height: '80px',
         width: '940px',
-        bgcolor: '#FAFAFA',
+        backgroundColor: '#FAFAFA',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',

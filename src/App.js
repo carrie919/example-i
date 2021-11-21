@@ -9,6 +9,8 @@ import ExamsPage from './pages/exams-page/exams-page.component';
 import ConceptsPage from './pages/concepts-page/concepts-page.component';
 import Footer from './components/footer/footer';
 
+// entry to the application
+
 const App = () => {
 
 	return (
@@ -16,7 +18,7 @@ const App = () => {
 			<Header />
 			<Switch>
 				<Route exact path='/' component={HomePage} />
-				<Route path='/exams' component={ExamsPage} />
+				<Route exact path='/exams' component={ExamsPage} />
 				<Route exact path='/concepts' component={ConceptsPage} />
 			</Switch>
 			<Footer />

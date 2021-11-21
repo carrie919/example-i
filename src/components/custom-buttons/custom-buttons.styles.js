@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
-const customButtonsStyles = makeStyles({
+const customButtonsStyles = makeStyles((theme) => ({
     buttonContent: {
         position: 'absolute',
         left: '14.71%',
@@ -63,24 +63,31 @@ const customButtonsStyles = makeStyles({
         width: '200px',
         backgroundColor: '#08C5A7',
         boxShadow: 'inset -1px -1px 1px #07B096, inset 1px 1px 1px #04E8C3',
-        position: 'absolute',
-        left: '0px',
-        top: '0px'
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        [theme.breakpoints.down('sm')]: {
+            height: '33px',
+            width: '120px',
+            borderRadius: '8px'
+        }
     },
     startButtonContent: {
-        position: 'absolute',
         width: '150px',
         height: '20px',
-        left: '25px',
-        top: '18px',
         fontFamily: 'Montserrat',
         fontSize: '18px',
         fontStyle: 'normal',
         fontWeight: '600',
         lineHeight: '100%',
         textAlign: 'center',
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        [theme.breakpoints.down('sm')]: {
+            width: '110px',
+            height: '15px',
+            fontSize: '14px'
+        }
     }
-});
+}));
 
 export default customButtonsStyles;

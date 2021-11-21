@@ -10,12 +10,6 @@ const footerStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        position: 'absolute',
-        left: '0%',
-        right: '0%',
-        top: '91.2%',
-        bottom: '0%',
-        zIndex: '3',
         backgroundColor: '#FAFAFA',
         [theme.breakpoints.down('xs')]: {
             height: '250px'
@@ -93,7 +87,7 @@ const footerStyles = makeStyles((theme) => ({
     },
     logoContainer: {
         width: '150px',
-        height: '100%',
+        height: '100px',
         display: 'flex',
         alignItems: 'center',
         [theme.breakpoints.down('xs')]: {

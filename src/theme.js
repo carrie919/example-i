@@ -8,16 +8,19 @@ const theme = createTheme({
             },
             fontFamily: 'Montserrat'
         },
-    }
-    // breakpoints: {
-    //     values: {
-    //         xs: 0,
-    //         sm: 600,
-    //         md: 960,
-    //         lg: 1280,
-    //         xl: 1920,
-    //     },
-    // },
+    },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 620,
+            md: 960,
+            lg: 1280,
+            xl: 1920,
+            custom1: 700,
+            custom2: 390,
+            custom3: 320,
+        },
+    },
 });
 
 export default theme
